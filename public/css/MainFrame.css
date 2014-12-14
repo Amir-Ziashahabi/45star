@@ -1,0 +1,123 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face{
+	font-family: 'WrexhamScript';
+	src: url(Fonts/WrexhamScript.TTF);
+	src: url(Fonts/WrexhamScript.TTF) format('truetype'),
+		 url(Fonts/WrexhamScript.woff) format('woff'),
+		 url(Fonts/WrexhamScript.svg) format('svg');
+}
+@font-face{
+	font-family: 'Neirizi';
+	src: url(Fonts/Neirizi.ttf);
+	src: url(Fonts/Neirizi.ttf) format('truetype'),
+		 url(Fonts/Neirizi.woff) format('woff'),
+		 url(Fonts/Neirizi.svg) format('svg');
+}
+body{
+	/*background-image:url(images/Guitar.jpg);
+	background-size: 100% auto;
+	background-position: top;
+	background-attachment: fixed;*/
+	background-image: url(images/body-bg2.png);
+	background-repeat: repeat;
+	background-color: #000;
+	padding: 0px;
+	margin: 0px; 
+	background-attachment: fixed;
+}
+div.header{
+	height: 50%;
+	width: 100%;
+	/*margin-bottom: 10px;
+	padding-bottom: 10px;*/
+	text-align: center;
+	color: #666;
+	font-size: 12px;
+	border-bottom: solid 3px #457485;
+	background:#F4F0F2;
+	top: 0px;
+	clear:both;
+	z-index: 1;
+	position:fixed;
+}
+ul.menu{
+	text-align: center;
+	height:50px;
+	width: 350px;
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+	margin-top: 25px;
+	display: none;
+}
+ul.menu li{
+	height: 50px;
+	width: 50px;
+	border: 2px solid #457485;
+	border-radius: 25px;
+	background-color: #457485;
+	display: inline-block;
+	margin: 10px;
+	padding: 0px; 
+}
+ul.menu li:hover{
+	background-color: #F4F0F2;
+	border-bottom: 2px solid #457485;
+	border-top: none;
+	opacity: 0.7;
+}
+div.footer{
+	height: 50%;
+	width: 100%;
+	background:#F4F0F2;
+	/*margin-top: 10px;
+	padding-top: 10px;*/
+	text-align: center;
+	color: #666;
+	font-size: 12px;
+	border-top: solid 3px #457485;
+	bottom: 0px;
+	clear:both;
+	z-index: 1;
+	position: fixed; 
+}
+ul.social{
+	text-align: center;
+	height:50px;
+	width: 250px;
+	padding: 0px;
+	margin: 0px;
+	margin-top: -45px;
+	margin-bottom: 20px;
+	list-style: none;
+	display: none;
+}
+ul.social li{
+	height: 50px;
+	width: 50px;
+	border-radius: 25px;
+	background-color: #457485;
+	border: 2px solid #457485;
+	display: inline-block;
+	margin: 10px;
+	padding: 0px; 
+}
+ul.social li:hover{
+	background-color: #F4F0F2;
+	border-top: 2px solid #457485;
+	border-bottom: none;
+	opacity: 0.7;
+}
+div.loading{
+	position: absolute;
+	top:0px;
+	bottom: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: #999;
+	z-index:3;
+	opacity: 1;
+	color: #fff;
+}
+

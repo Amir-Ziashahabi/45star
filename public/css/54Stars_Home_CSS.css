@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face{
+	font-family: 'WrexhamScript';
+	src: url(Fonts/WrexhamScript.TTF);
+	src: url(Fonts/WrexhamScript.TTF) format('truetype'),
+		 url(Fonts/WrexhamScript.woff) format('woff'),
+		 url(Fonts/WrexhamScript.svg) format('svg');
+}
+body{
+	background-image:url(images/Guitar.jpg);
+	background-size: 100% auto;
+	background-position: top;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-color: #000;
+	padding: 0px;
+	margin: 0px;
+}
+div.footer{
+	min-height: 50px;
+	width: 100%;
+	background:#F4F0F2;
+	margin-top: 10px;
+	padding-top: 10px;
+	text-align: center;
+	color: #666;
+	font-size: 12px;
+	border-top: solid 3px #525252;
+	bottom: 0px;
+	clear:both;
+	z-index: 1;
+	position:absolute; 
+}
+ul.social{
+	text-align: center;
+	height:50px;
+	width: 220px;
+	padding: 0px;
+	margin: 0px;
+	margin-top: -45px;
+	margin-bottom: 20px;
+	list-style: none;
+}
+ul.social li{
+	height: 50px;
+	width: 50px;
+	border-radius: 25px;
+	background-color: #666;
+	display: inline-block;
+	margin: 10px;
+	padding: 0px; 
+}
+ul.social li:hover{
+	background-color: #CCC;
+}
+p:hover{
+	opacity: 0.7;
+}
+
