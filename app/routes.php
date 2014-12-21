@@ -58,3 +58,20 @@ Route::post('/upload',function(){
 	}
 
 });
+Route::get('/getinfo{id}'function($id){
+	$song=Song::find($id);
+	$name=$song->name;
+	$artis=$song->artist;
+	$path=$song->path;
+
+	$xml = new SimpleXMLElement('<xml/>');
+	$songObj = $xml->addChild('song');
+	$songObj->addChild('name', $name);
+	$songObj->addChild('artist', $artist);
+	$songObj->addChild('path', $path);
+	$response = Response::make($xml->asXML());
+	$response->header('Content-Type', 'text/xml');
+
+	return $response;
+}
+);
