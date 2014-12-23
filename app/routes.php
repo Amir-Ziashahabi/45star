@@ -74,4 +74,17 @@ Route::get('/getinfo{id}'function($id){
 
 	return $response;
 }
-);
+); 
+
+
+#----------Admin------------#
+Route::get('/admin',function(){
+	return View::make('admin');
+});
+
+Route::get('/admin/changepass', function(){
+
+	return View::make('ChangePass');
+});
+
+Route::post('/admin/changepass','UserController@ChangePass');
