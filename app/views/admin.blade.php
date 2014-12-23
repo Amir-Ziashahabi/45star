@@ -13,10 +13,10 @@
 		<div class="postform">
 
 	<p><h1>مدیریت سایت</h1></p>
-	<a href="admin/musiccontrol"><h4>مدیریت آهنگ ها</h4></a>
+	<a href="admin/songscontrol"><h4>مدیریت آهنگ ها</h4></a>
     <a href="admin/textedit"><h4>نگارش توضیحات</h4></a>
     <a href="admin/changepass"><h4>تغییر رمز</h4></a>
-    <a href="/home"><h4>نمایش سایت</h4></a>
+    <a href="http:/54star/public"><h4>نمایش سایت</h4></a>
     <a href="/logout"><h4>خروج</h4></a>
     </div>
     </div>

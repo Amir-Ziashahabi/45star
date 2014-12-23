@@ -87,4 +87,30 @@ Route::get('/admin/changepass', function(){
 	return View::make('ChangePass');
 });
 
-Route::post('/admin/changepass','UserController@ChangePass');
+Route::post('/admin/changepass','AdminController@ChangePass');
+
+Route::get('/admin/songscontrol',function(){
+    		try {
+
+    			$options = array(
+    				PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8',
+				);
+				$db = new PDO("mysql:host = localhost ; dbname=musicband",'root','',$options);
+				#set message to nothing
+				$message = "";
+				$getInfo = ($db->prepare('SELECT * From songs'));
+				#run query
+				$getInfo->execute();
+				$Songs = $getInfo->fetchall();
+				$db = null;
+    			return View::make('AdminSongsControl',array('songs'=>$Songs));
+    			}
+    		catch(PDOException $e)
+				{
+				    echo $e->getMessage();
+		    	}
+
+
+});
+
+Route::post('/admin/songscontrol','AdminController@delSong');
