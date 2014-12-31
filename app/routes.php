@@ -19,6 +19,13 @@ Route::get('/songs', function()
 {
 	return View::make('musics');
 });
+
+Route::get('/news', function()
+{
+	return View::make('news');
+});
+
+
 function getDownload($id){
         //PDF file is stored under project/public/download/info.pdf
 		$musicFile=Music::find($id);
@@ -58,7 +65,7 @@ Route::post('/upload',function(){
 	}
 
 });
-Route::get('/getinfo{id}'function($id){
+Route::get('/getinfo{id}',function($id){
 	$song=Song::find($id);
 	$name=$song->name;
 	$artis=$song->artist;
@@ -73,7 +80,7 @@ Route::get('/getinfo{id}'function($id){
 	$response->header('Content-Type', 'text/xml');
 
 	return $response;
-}
+}	
 ); 
 
 
